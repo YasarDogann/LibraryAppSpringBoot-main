@@ -15,7 +15,7 @@ public class CorsConfig {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
 //                        .allowedOrigins("*")
-                        .allowedOrigins("http://localhost:5173") // Vite frontend URL'si
+                        .allowedOrigins("http://localhost:5173", "https://capstone-project-frontend-b39p.vercel.app/") // Vite frontend URL'si
                         .allowedMethods("GET", "POST", "PUT", "DELETE")
                         .allowedHeaders("Authorization", "Content-Type")
                         .allowCredentials(true);
